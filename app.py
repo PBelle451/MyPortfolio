@@ -37,22 +37,29 @@ def projects():
         {
             'title': 'Liver Cancer',
             'description': 'This is a project that uses Multiple Linear Regression to predict what is the probability of patients to develop Liver Cancer\nbased on conditions such as smoking habits, sanitary conditions, living conditions, eating habits, drinking habits and etc',
-            'tech': 'Python, Pandas, Numpy, Sckit Learn, Matplotlib, Seaborn'
+            'tech': 'Python, Pandas, Numpy, Sckit Learn, Matplotlib, Seaborn',
+            'link': 'https://github.com/PBelle451/LiverCancer'
         },
+        
         {
             'title': 'ECommerce',
             'description': 'A small ecommerce website I made in order to practice my knowledge in HTML, CSS, Javascript and Bootstrap',
-            'tech': 'HTML, CSS, Bootstrap, Javascript'
+            'tech': 'HTML, CSS, Bootstrap, Javascript',
+            'link': 'https://github.com/PBelle451/ECommerce'
         },
+        
         {
             'title': 'House Prices',
             'description': 'A Data Science project that uses Linear Regression and Random Forest Regressor.\nThe model predicts the average increase of housing prices based of previous data analyzed using the Random Forest to classify large amount o data.',
-            'tech': 'Python, Pandas, Numpy, Sckit Learn, Seaborn, Matplotlib'
+            'tech': 'Python, Pandas, Numpy, Sckit Learn, Seaborn, Matplotlib',
+            'link': 'https://github.com/PBelle451/HousePrices'
         },
+        
         {
             'title': 'Youtube AI Transcript',
             'description': 'A Python project using Whisper AI from OpenAI which extracts the audio from the video and transcripts it to text format.',
-            'tech': 'Python, OpenAI'
+            'tech': 'Python, OpenAI',
+            'link': 'https://github.com/PBelle451/YoutubeAItranscript'
         }
     ]
     return render_template('projects.html', projects=projects)

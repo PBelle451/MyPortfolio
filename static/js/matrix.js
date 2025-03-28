@@ -47,4 +47,15 @@ document.addEventListener('DOMContentLoaded', function () {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
     });
+
+    if (!document.body.style.backgroundImage.includes('matrix-bg.gif')) {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.style.position = 'fixed';
+        canvas.style.top = '0';
+        canvas.style.left = '0';
+        canvas.style.zIndex = '-1';
+        canvas.style.opacity = '0.3';
+        document.querySelector('.matrix-rain').appendChild(canvas);
+    }
 });
