@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Meu Portfólio{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='fonts/matrix-code.ttf') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}" class="matrix-link">Home</a></li>
+                <li><a href="{{ url_for('about') }}" class="matrix-link">Sobre</a></li>
+                <li><a href="{{ url_for('projects') }}" class="matrix-link">Projetos</a></li>
+                <li><a href="{{ url_for('contact') }}" class="matrix-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="matrix-main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados. Escolha a pílula vermelha...</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/matrix.js') }}"></script>
+</body>
+</html>

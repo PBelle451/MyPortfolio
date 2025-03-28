@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="matrix-card">
+    <h1 class="glow">Minhas Habilidades</h1>
+    
+    {% for skill in skills %}
+    <div>
+        <h3>{{ skill.name }} <small>({{ skill.years }})</small></h3>
+        <div class="skill-bar">
+            <div class="skill-progress" data-level="{{ skill.level }}" style="width: {{ skill.level }};"></div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}
