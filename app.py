@@ -27,7 +27,7 @@ def skills():
         {"name": "Angular", "level": "20%", "years": "1 ano"},
         {"name": "Haskell",  "level": "20%", "years": "1 ano"},
         {"name": "PostgresSQL", "level": "20%", "years": "1 ano"},
-        {"name": "Flask", "level": "10%", "years": "0 ano"}
+        {"name": "Flask", "level": "20%", "years": "1 ano"}
     ]
     return render_template('skills.html', skills=skills)
 
