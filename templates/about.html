@@ -3,8 +3,15 @@
 
 {% block content %}
 <section>
-    <h1>Sobre Mim</h1>
-    <p>Olá! Eu sou um desenvolvedor apaixonado por Python, Flask e Django.</p>
+    <div class="profile-container">
+        <img src="{{ url_for('static', filename='/images/profile.jpeg') }}" 
+        alt="Foto de perfil" 
+        class="profile-image">
+    </div>
+</section>
+<section>
+    <h1 class="glow">Sobre Mim</h1>
+    <p>Olá! Eu sou Pedro B.Castro, um desenvolvedor apaixonado por Python, Flask e Django.</p>
     <p>Tenho experiência em desenvolvimento web, desenvolvimento back-end e ciência de dados</p>
     <p>Sou um desenvolvedor disciplinado e autodidata, sou bacharel em Ciência da Computação e tenho experiência profissional como desenvolvedor e software tester</p>
     <p>Estou sempre em busca de novos desafios e oportunidades de aprendizado</p>
@@ -73,5 +80,17 @@
     <p><strong>Descrição:</strong> Certificação de que concluí a trilha de aprendizado de Ciência de Dados aplicada da IBM</p>
     <p><strong>Tecnologias:</strong> Python, Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn, Bokeh</p>
     <p><strong>Link:</strong> <a href="https://www.credly.com/badges/241e5390-2f47-4dac-8a67-22b588fe55cf/public_url">https://www.credly.com/badges/241e5390-2f47-4dac-8a67-22b588fe55cf/public_url</a></p>
+</section>
+
+<section>
+    <h1>Idiomas</h1>
+    <h3>Inglês</h3>
+    <p><strong>Nível:</strong> Avançado</p>
+
+    <h3>Alemão</h3>
+    <p><strong>Nível:</strong> Básico</p>
+
+    <h3>Português</h3>
+    <p><strong>Nível:</strong> Nativo</p>
 </section>
 {% endblock %}
