@@ -67,7 +67,14 @@ def projects():
 # Página de contato
 @app.route('/contact')
 def contact():
-    return render_template('contact.html')
+    contact_info = [
+        {'name': 'E-Mail', 'link': 'lordbelle7@gmail.com'},
+        {'name': 'LinkedIn', 'link': 'https://www.linkedin.com/in/pedro-belle-5b4b8b1b7/'},
+        {'name': 'Github', 'link': 'https://github.com/PBelle451'},
+        {'name': 'Whatsapp', 'link': 'https://api.whatsapp.com/send?phone=56199948985'}
+    ]
+    return render_template('contact.html', contact=contact_info)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
