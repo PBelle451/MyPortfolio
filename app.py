@@ -56,6 +56,12 @@ def projects():
             'description': 'A Python project using Whisper AI from OpenAI which extracts the audio from the video and transcripts it to text format.',
             'tech': 'Python, OpenAI',
             'link': 'https://github.com/PBelle451/YoutubeAItranscript'
+        },
+        {
+            'title': 'Flask Portfolio',
+            'description': 'A simple portfolio website made using Flask, HTML, CSS, Javascript and Python',
+            'tech': 'Python, Flask, HTML, CSS, Javascript',
+            'link': 'https://github.com/PBelle451/MyPortfolio'
         }
     ]
     return render_template('projects.html', projects=projects)
