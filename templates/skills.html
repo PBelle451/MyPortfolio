@@ -7,8 +7,8 @@
     {% for skill in skills %}
     <div>
         <h3>{{ skill.name }} <small>({{ skill.years }})</small></h3>
-        <div class="skill-bar">
-            <div class="skill-progress" data-level="{{ skill.level }}" style="width: {{ skill.level }};"></div>
+        <div class="skill-bar" role="progressbar" aria-valuenow="{{ skill.level }}" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-progress" data-level="{{ skill.level }}%;" style="width: {{ skill.level }};"></div>
         </div>
     </div>
     {% endfor %}
