@@ -60,7 +60,7 @@ def projects():
         {
             'title': 'Flask Portfolio',
             'description': 'A simple portfolio website made using Flask, HTML, CSS, Javascript and Python',
-            'tech': 'Python, Flask, HTML, CSS, Javascript',
+            'tech': 'Python, Flask, HTML, CSS, Javascript, Docker',
             'link': 'https://github.com/PBelle451/MyPortfolio'
         }
     ]

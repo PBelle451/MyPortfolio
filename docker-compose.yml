@@ -1,0 +1,14 @@
+version: '4.40'
+
+services:
+  portfolio:
+    build: .
+    container_name: my_portfolio
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_RUN_HOST=0.0.0.0
+    restart: always
