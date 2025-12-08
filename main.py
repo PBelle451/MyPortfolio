@@ -1,6 +1,11 @@
 from flask import Flask, render_template
+import os
 
-app = Flask(__name__)
+BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "app")
+
+app = Flask(__name__,
+            template_folder=os.path.join(BASE_DIR, "templates"),
+            static_folder=os.path.join(BASE_DIR, "static"))
 
 # Página inicial
 @app.route('/')
@@ -116,3 +121,5 @@ def contact():
         {'name': 'Whatsapp', 'link': 'https://api.whatsapp.com/send?phone=56199948985'}
     ]
     return render_template('contact.html', contact=contact_info)
+
+print("MAIN.PY INICIADO")
