@@ -1,6 +1,5 @@
-FROM python:3.14-slim
+FROM python:3.11-slim
 
-# Evita problemas com output do Python
 ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
@@ -11,8 +10,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Porta exposta pelo container
 EXPOSE 8000
 
-# Comando de produção via Gunicorn
 CMD ["gunicorn", "-b", "0.0.0.0:8000", "wsgi:app"]
