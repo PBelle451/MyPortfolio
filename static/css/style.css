@@ -1,9 +1,8 @@
 /* Estilos Matrix */
 @font-face {
     font-family: "MatrixFont";
-    src: url("/fonts/matrix-code.ttf");
+    src: url("../fonts/matrix-code.ttf");
 }
-
 
 body {
     background-color: #000;

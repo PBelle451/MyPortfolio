@@ -1,16 +1,10 @@
 from flask import Flask, render_template
-import os
 
-BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "app")
+app = Flask(__name__)
 
-app = Flask(__name__,
-            template_folder=os.path.join(BASE_DIR, "templates"),
-            static_folder=os.path.join(BASE_DIR, "static"))
-
-# Página inicial
-@app.route('/')
+@app.route("/")
 def home():
-    return render_template('about.html')
+    return render_template("about.html")
 
 @app.route('/skills')
 def skills():
