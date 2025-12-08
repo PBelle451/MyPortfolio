@@ -116,7 +116,3 @@ def contact():
         {'name': 'Whatsapp', 'link': 'https://api.whatsapp.com/send?phone=56199948985'}
     ]
     return render_template('contact.html', contact=contact_info)
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
