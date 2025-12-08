@@ -11,19 +11,37 @@ def home():
 def skills():
     skills = [
         {"name": "Python", "level": "90%", "years": "5 anos"},
+        {"name": "Java", "level": "75%", "years": "4 anos"},
         {"name": "HTML/CSS", "level": "75%", "years": "4 anos"},
         {"name": "Javascript", "level": "50%", "years": "4 anos"},
-        {"name": "C++", "level": "50%", "years": "4 anos"},
+        {"name": "C/C++", "level": "50%", "years": "4 anos"},
         {"name": "SQL Server", "level": "50%","years": "4 anos"},
-        {"name": "Java", "level": "50%", "years": "3 anos"},
-        {"name": "Bootstrap", "level": "50%", "years": "2 anos"},
+        {"name": "MySQL", "level": "50%", "years": "4 anos"},
+        {"name": "Git", "level": "50%", "years": "4 anos"},
+        {"name": "Anaconda", "level": "50%", "years": "2 anos"},
+        {"name": "Linux", "level": "50%", "years": "3 anos"},
+        {"name": "Typescript", "level": "50%", "years": "2 anos"},
+        {"name": "REST APIs", "level": "50%", "years": "2 anos"},
+        {"name": "FastAPI", "level": "50%", "years": "2 anos"},
+        {"name": "Scrum", "level": "50%", "years": "2 anos"},
+        {"name": "Agile", "level": "50%", "years": "2 anos"},
+        {"name": "CI/CD", "level": "50%", "years": "2 anos"},
+        {"name": "Playwright", "level": "50%", "years": "2 anos"},
+        {"name": "Flask", "level": "50%", "years": "2 anos"},
         {"name": "Django", "level": "40%", "years": "2 anos"},
         {"name": "Docker", "level": "40%", "years": "2 anos"},
-        {"name": "Typescript", "level": "30%", "years": "1 ano"},
+        {"name": "Kubernetes", "level": "45%", "years": "2 anos"},
+        {"name": "Data Science", "level": "40%", "years": "1 ano"},
+        {"name": "Machine Learning", "level": "40%", "years": "1 ano"},
+        {"name": "AWS", "level": "40%", "years": "1 ano"},
+        {"name": "OCI", "level": "40%", "years": "1 ano"},
+        {"name": "MongoDB", "level": "30%", "years": "2 anos"},
+        {"name": "React", "level": "30%", "years": "1 ano"},
         {"name": "Angular", "level": "20%", "years": "1 ano"},
         {"name": "Haskell",  "level": "20%", "years": "1 ano"},
-        {"name": "PostgresSQL", "level": "20%", "years": "1 ano"},
-        {"name": "Flask", "level": "20%", "years": "1 ano"}
+        {"name": "PostgreSQL", "level": "20%", "years": "1 ano"},
+        {"name": "Selenium", "level": "20%", "years": "6 meses"},
+        {"name": "Cypress", "level": "20%", "years": "6 meses"}
     ]
     return render_template('skills.html', skills=skills)
 
@@ -38,10 +56,10 @@ def projects():
         },
         
         {
-            'title': 'ECommerce',
-            'description': 'A small ecommerce website I made in order to practice my knowledge in HTML, CSS, Javascript and Bootstrap',
-            'tech': 'HTML, CSS, Bootstrap, Javascript',
-            'link': 'https://github.com/PBelle451/ECommerce'
+            'title': 'Spotify Dataframe',
+            'description': 'A Python project that uses Spotipy to extract data from Spotify API and creates a dataframe using Pandas.\nThe dataframe can be used to analyze the data and create visualizations using Matplotlib and Seaborn.',
+            'tech': 'Python, Spotipy, Pandas, Matplotlib, Seaborn',
+            'link': 'https://github.com/PBelle451/SpotifyDataframe'
         },
         
         {
@@ -57,6 +75,21 @@ def projects():
             'tech': 'Python, OpenAI',
             'link': 'https://github.com/PBelle451/YoutubeAItranscript'
         },
+        
+        {
+            'title': 'Covid Dashboard',
+            'description': 'This small project is a mix between my knowledge in Flask and Data Science.\nI used Python, Flask, Pandas and Plotly for this project.',
+            'tech': 'Python, Flask, Pandas, Plotly',
+            'link': 'https://github.com/PBelle451/CovidDashboardBR'
+        },
+        
+        {
+            'title': 'Análise Ancestralidade no estado de Goiás',
+            'description': 'Projeto de Ciência de Dados que analisa a ancestralidade genética da população brasileira utilizando dados de DNA.\nO projeto utiliza bibliotecas como Pandas, NumPy, Matplotlib e Seaborn para análise e visualização dos dados.',
+            'tech': 'Python, Pandas, Numpy, Matplotlib, Seaborn',
+            'link': 'https://github.com/PBelle451/Analise-Ancestralidade-Goias'
+        },
+        
         {
             'title': 'Flask Portfolio',
             'description': 'A simple portfolio website made using Flask, HTML, CSS, Javascript and Python',
@@ -70,8 +103,8 @@ def projects():
 @app.route('/contact')
 def contact():
     contact_info = [
-        {'name': 'E-Mail', 'link': 'lordbelle7@gmail.com'},
-        {'name': 'LinkedIn', 'link': 'https://www.linkedin.com/in/pedro-belle-5b4b8b1b7/'},
+        {'name': 'E-Mail', 'link': 'pedrocastro451@protonmail.com'},
+        {'name': 'LinkedIn', 'link': 'https://www.linkedin.com/in/pedro-castro-075020233/'},
         {'name': 'Github', 'link': 'https://github.com/PBelle451'},
         {'name': 'Whatsapp', 'link': 'https://api.whatsapp.com/send?phone=56199948985'}
     ]
