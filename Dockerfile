@@ -1,11 +1,18 @@
-FROM python:3.14
+FROM python:3.14-slim
+
+# Evita problemas com output do Python
+ENV PYTHONUNBUFFERED=1
+
 WORKDIR /app
-COPY . /app
-COPY requirements.txt /app/requirements.txt
-RUN pip install --upgrade pip && pip install -r requirements.txt
 
-EXPOSE 5000
-ENV FLASK_APP=app.py
-ENV FLASK_RUN_HOST=0.0.0.0
+COPY requirements.txt .
 
-CMD ["flask", "run"]
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+# Porta exposta pelo container
+EXPOSE 8000
+
+# Comando de produção via Gunicorn
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "wsgi:app"]
