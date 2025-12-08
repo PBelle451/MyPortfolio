@@ -18,6 +18,16 @@ body {
     position: relative;
 }
 
+.content-box {
+    background: rgba(0, 0, 0, 0.6); /* caixa escura semi-transparente */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 40px auto;
+    backdrop-filter: blur(4px); /* efeito vidro */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* borda leve */
+}
+
 .matrix-rain {
     position: fixed;
     top: 0;

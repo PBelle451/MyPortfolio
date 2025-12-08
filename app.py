@@ -95,6 +95,13 @@ def projects():
             'description': 'A simple portfolio website made using Flask, HTML, CSS, Javascript and Python',
             'tech': 'Python, Flask, HTML, CSS, Javascript, Docker',
             'link': 'https://github.com/PBelle451/MyPortfolio'
+        },
+        
+        {
+            'title': 'AI Chatbot Java',
+            'description': 'A simple chatbot made using Java and OpenAI API\nIt offers real-time responses to user queries by leveraging advanced natural language processing capabilities.',
+            'tech': 'Java, OpenAI API, Maven',
+            'link': 'https://github.com/PBelle451/ChatAIJava'
         }
     ]
     return render_template('projects.html', projects=projects)
