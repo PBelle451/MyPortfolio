@@ -13,7 +13,7 @@ O site contém:
 
 🚀 Tecnologias Utilizadas
 
-Python 3.11 / 3.12 / 3.14 compatível
+Python 3.11 / 3.12  compatível
 
 Flask 3
 
