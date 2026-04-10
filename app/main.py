@@ -34,13 +34,14 @@ def skills():
         {"name": "Machine Learning", "level": "40%", "years": "1 ano"},
         {"name": "AWS", "level": "40%", "years": "1 ano"},
         {"name": "OCI", "level": "40%", "years": "1 ano"},
-        {"name": "MongoDB", "level": "30%", "years": "2 anos"},
+        {"name": "MongoDB", "level": "30%", "years": "1 ano"},
         {"name": "React", "level": "30%", "years": "1 ano"},
         {"name": "Angular", "level": "20%", "years": "1 ano"},
         {"name": "Haskell",  "level": "20%", "years": "1 ano"},
         {"name": "PostgreSQL", "level": "20%", "years": "1 ano"},
         {"name": "Selenium", "level": "20%", "years": "6 meses"},
-        {"name": "Cypress", "level": "20%", "years": "6 meses"}
+        {"name": "Cypress", "level": "20%", "years": "6 meses"},
+        {"name": "Behave", "level": "20%", "years": "6 meses"}
     ]
     return render_template('skills.html', skills=skills)
 
@@ -55,20 +56,6 @@ def projects():
         },
         
         {
-            'title': 'Spotify Dataframe',
-            'description': 'A Python project that uses Spotipy to extract data from Spotify API and creates a dataframe using Pandas.\nThe dataframe can be used to analyze the data and create visualizations using Matplotlib and Seaborn.',
-            'tech': 'Python, Spotipy, Pandas, Matplotlib, Seaborn',
-            'link': 'https://github.com/PBelle451/SpotifyDataframe'
-        },
-        
-        {
-            'title': 'House Prices',
-            'description': 'A Data Science project that uses Linear Regression and Random Forest Regressor.\nThe model predicts the average increase of housing prices based of previous data analyzed using the Random Forest to classify large amount o data.',
-            'tech': 'Python, Pandas, Numpy, Sckit Learn, Seaborn, Matplotlib',
-            'link': 'https://github.com/PBelle451/HousePrices'
-        },
-        
-        {
             'title': 'Youtube AI Transcript',
             'description': 'A Python project using Whisper AI from OpenAI which extracts the audio from the video and transcripts it to text format.',
             'tech': 'Python, OpenAI',
@@ -76,31 +63,38 @@ def projects():
         },
         
         {
-            'title': 'Covid Dashboard',
-            'description': 'This small project is a mix between my knowledge in Flask and Data Science.\nI used Python, Flask, Pandas and Plotly for this project.',
-            'tech': 'Python, Flask, Pandas, Plotly',
-            'link': 'https://github.com/PBelle451/CovidDashboardBR'
-        },
-        
-        {
-            'title': 'Análise Ancestralidade no estado de Goiás',
-            'description': 'Projeto de Ciência de Dados que analisa a ancestralidade genética da população brasileira utilizando dados de DNA.\nO projeto utiliza bibliotecas como Pandas, NumPy, Matplotlib e Seaborn para análise e visualização dos dados.',
-            'tech': 'Python, Pandas, Numpy, Matplotlib, Seaborn',
-            'link': 'https://github.com/PBelle451/Analise-Ancestralidade-Goias'
-        },
-        
-        {
-            'title': 'Flask Portfolio',
-            'description': 'A simple portfolio website made using Flask, HTML, CSS, Javascript and Python',
-            'tech': 'Python, Flask, HTML, CSS, Javascript, Docker',
-            'link': 'https://github.com/PBelle451/MyPortfolio'
-        },
-        
-        {
             'title': 'AI Chatbot Java',
             'description': 'A simple chatbot made using Java and OpenAI API\nIt offers real-time responses to user queries by leveraging advanced natural language processing capabilities.',
             'tech': 'Java, OpenAI API, Maven',
             'link': 'https://github.com/PBelle451/ChatAIJava'
+        },
+        
+        {
+            'title': 'Projeto Padaria',
+            'description': 'Project of an API for a bakery, which allows to manage the inventory, sales and customers.\nI used Java and Spring Boot to create the API, and PostgreSQL to create the database.',
+            'tech': 'Java, Spring Boot, PostgreSQL',
+            'link': 'https://github.com/PBelle451/projeto-padaria-melhorado'
+        },
+        
+        {
+            'title': 'Projeto TDD',
+            'description': 'Project for an a Test Driven Development (TDD) course I made, which consists in creating a simple API for a library, which allows to manage the inventory, sales and customers.\nI used Java and Spring Boot to create the API, and PostgreSQL to create the database.',
+            'tech': 'Java, Spring Boot, PostgreSQL',
+            'link': 'https://github.com/PBelle451/projeto_tdd'
+        },
+        
+        {
+            'title': 'Store Microservices',
+            'description': 'Project for a Microservices course I made, which consists in creating a simple API for a store, which allows to manage the inventory, sales and customers.\nI used Java and Spring Boot to create the API, and PostgreSQL to create the database.',
+            'tech': 'Java, Spring Boot, PostgreSQL',
+            'link': 'https://github.com/PBelle451/store-microservices'
+        },
+        
+        {
+            'title': 'Middleware',
+            'description': 'A simple middleware made using Java and Spring Boot which allows to log the requests and responses of an API.\nIt uses the public API of the Brazilian government to get the data of the cities and states of Brazil.',
+            'tech': 'Java, Spring Boot',
+            'link': 'https://github.com/PBelle451/MiddlewareProject'
         }
     ]
     return render_template('projects.html', projects=projects)
@@ -117,3 +111,5 @@ def contact():
     return render_template('contact.html', contact=contact_info)
 
 print("MAIN.PY INICIADO")
+print("Acesse http://localhost:8000 para visualizar o portfólio")
+print("Lembrando que se não funcionar é culpa do Lula, faz o L nessa porra")
