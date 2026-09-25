@@ -9,9 +9,9 @@ def home():
 @app.route('/skills')
 def skills():
     skills = [
-        {"name": "Python", "level": "90%", "years": "5 anos"},
-        {"name": "Java", "level": "75%", "years": "4 anos"},
-        {"name": "HTML/CSS", "level": "75%", "years": "4 anos"},
+        {"name": "Python", "level": "70%", "years": "5 anos"},
+        {"name": "Java", "level": "70%", "years": "4 anos"},
+        {"name": "HTML/CSS", "level": "70%", "years": "4 anos"},
         {"name": "Javascript", "level": "50%", "years": "4 anos"},
         {"name": "C/C++", "level": "50%", "years": "4 anos"},
         {"name": "SQL Server", "level": "50%","years": "4 anos"},
@@ -39,9 +39,9 @@ def skills():
         {"name": "Angular", "level": "20%", "years": "1 ano"},
         {"name": "Haskell",  "level": "20%", "years": "1 ano"},
         {"name": "PostgreSQL", "level": "20%", "years": "1 ano"},
-        {"name": "Selenium", "level": "20%", "years": "6 meses"},
-        {"name": "Cypress", "level": "20%", "years": "6 meses"},
-        {"name": "Behave", "level": "20%", "years": "6 meses"}
+        {"name": "Selenium", "level": "10%", "years": "6 meses"},
+        {"name": "Cypress", "level": "10%", "years": "6 meses"},
+        {"name": "Behave", "level": "10%", "years": "6 meses"}
     ]
     return render_template('skills.html', skills=skills)
 
@@ -49,17 +49,18 @@ def skills():
 def projects():
     projects = [
         {
-            'title': 'Liver Cancer',
-            'description': 'This is a project that uses Multiple Linear Regression to predict what is the probability of patients to develop Liver Cancer\nbased on conditions such as smoking habits, sanitary conditions, living conditions, eating habits, drinking habits and etc',
+            'title': 'ARPG Analyzer',
+            'description': 'A project that analyzes the data of an ARPG game like Path of Exile or Diablo 4 to understand what builds are the most effective and what are trending the most.',
             'tech': 'Python, Pandas, Numpy, Sckit Learn, Matplotlib, Seaborn',
-            'link': 'https://github.com/PBelle451/LiverCancer'
+            'link': 'https://github.com/PBelle451/arpg-analyzer'
         },
         
         {
-            'title': 'Youtube AI Transcript',
-            'description': 'A Python project using Whisper AI from OpenAI which extracts the audio from the video and transcripts it to text format.',
-            'tech': 'Python, OpenAI',
-            'link': 'https://github.com/PBelle451/YoutubeAItranscript'
+            'title': 'Comic Genre Classifier',
+            'description': 'A project that classifies comics into genres like Action, Adventure, Comedy, Drama, Fantasy, Horror, Mystery, Romance, Sci-Fi, Thriller, etc.\nUsing a synthetic dataset and creating a CNN model to classify the genres.',
+            'tech': 'Python, Pandas, Numpy, Sckit Learn, PyTorch, FastAPI, Docker',
+            'link': 'https://github.com/PBelle451/comic-genre-classifier'
+
         },
         
         {
@@ -70,14 +71,14 @@ def projects():
         },
         
         {
-            'title': 'Projeto Padaria',
+            'title': 'Bakery Project',
             'description': 'Project of an API for a bakery, which allows to manage the inventory, sales and customers.\nI used Java and Spring Boot to create the API, and PostgreSQL to create the database.',
             'tech': 'Java, Spring Boot, PostgreSQL',
             'link': 'https://github.com/PBelle451/projeto-padaria-melhorado'
         },
         
         {
-            'title': 'Projeto TDD',
+            'title': 'Project TDD',
             'description': 'Project for an a Test Driven Development (TDD) course I made, which consists in creating a simple API for a library, which allows to manage the inventory, sales and customers.\nI used Java and Spring Boot to create the API, and PostgreSQL to create the database.',
             'tech': 'Java, Spring Boot, PostgreSQL',
             'link': 'https://github.com/PBelle451/projeto_tdd'
