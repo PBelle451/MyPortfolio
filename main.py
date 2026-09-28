@@ -113,4 +113,4 @@ def contact():
 
 print("MAIN.PY INICIADO")
 print("Acesse http://localhost:8000 para visualizar o portfólio")
-print("Lembrando que se não funcionar é culpa do Lula, faz o L nessa porra")
+print("Por razões de força maior tive que tirar a mensagem anterior daqui")

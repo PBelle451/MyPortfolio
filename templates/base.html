@@ -3,38 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d0b0a">
     <title>{% block title %}Meu Portfólio{% endblock %}</title>
 
-    <!-- CSS principal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
-    <style>
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 0;
-            list-style: none;
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Pedro B. Castro</h1>
-        <nav>
+        <p class="tagline">Desenvolvedor Fullstack &middot; Analista de Testes &middot; IA Aplicada</p>
+        <nav aria-label="Navegação principal">
             <ul>
-                <li><a href="{{ url_for('home') }}" class="matrix-link">Home</a></li>
-                <li><a href="{{ url_for('projects') }}" class="matrix-link">Projetos</a></li>
-                <li><a href="{{ url_for('skills') }}" class="matrix-link">Habilidades</a></li>
-                <li><a href="{{ url_for('contact') }}" class="matrix-link">Contato</a></li>
+                <li><a href="{{ url_for('home') }}" class="matrix-link{% if request.endpoint == 'home' %} active{% endif %}">Home</a></li>
+                <li><a href="{{ url_for('projects') }}" class="matrix-link{% if request.endpoint == 'projects' %} active{% endif %}">Projetos</a></li>
+                <li><a href="{{ url_for('skills') }}" class="matrix-link{% if request.endpoint == 'skills' %} active{% endif %}">Habilidades</a></li>
+                <li><a href="{{ url_for('contact') }}" class="matrix-link{% if request.endpoint == 'contact' %} active{% endif %}">Contato</a></li>
             </ul>
         </nav>
+        <div class="ornament" aria-hidden="true"></div>
     </header>
 
     <main class="matrix-main">
@@ -42,9 +32,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Meu Portfólio. Todos os direitos reservados. Escolha a pílula vermelha...</p>
+        <p>&copy; 2026 Pedro B. Castro. Todos os direitos reservados.</p>
+        <p class="footer-note">Forjado em Flask, temperado em Python.</p>
     </footer>
 
-    <script src="/app/static/js/matrix.js"></script>
+    <script src="{{ url_for('static', filename='js/embers.js') }}"></script>
 </body>
 </html>
