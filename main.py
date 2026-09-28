@@ -92,7 +92,7 @@ def projects():
         },
         
         {
-            'title': 'Middleware',
+            'title': 'Middleware Project',
             'description': 'A simple middleware made using Java and Spring Boot which allows to log the requests and responses of an API.\nIt uses the public API of the Brazilian government to get the data of the cities and states of Brazil.',
             'tech': 'Java, Spring Boot',
             'link': 'https://github.com/PBelle451/MiddlewareProject'
